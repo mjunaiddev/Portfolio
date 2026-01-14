@@ -1,3 +1,4 @@
+import { Urbanist } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -37,7 +38,7 @@ const config: Config = {
         center: true,
       },
       fontFamily: {
-        Inter: ["Inter", "sans-serif"],
+        Urbanist: ["Urbanist"],
         Lufga: ["Lufga", "sans-serif"],
       },
       backgroundImage: {

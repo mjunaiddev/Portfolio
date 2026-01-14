@@ -9,28 +9,15 @@
   font-style: normal;
 }
 
- /* Chrome, Edge, Safari  */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill {
-  -webkit-text-fill-color: #FFFFFF !important;
-  transition: background-color 9999s ease-in-out 0s;
-  box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset !important;
-  caret-color: #FFFFFF;
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
 }
 
-/* Firefox */
-input:-moz-autofill {
-  box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset !important;
-  -moz-text-fill-color: #FFFFFF !important;
-}
-/* Hide scrollbar but keep scrolling */
-.scrollbar-none {
-  scrollbar-width: none;          /* Firefox */
-  -ms-overflow-style: none;       /* IE / Edge */
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #F7CA15;
+  border-radius: 10px;
 }
 
-.scrollbar-none::-webkit-scrollbar {
-  display: none;                  /* Chrome / Safari */
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
 }

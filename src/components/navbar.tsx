@@ -30,14 +30,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container h-[100px] mt-10">
-      <div className="flex justify-between items-center rounded-full bg-[#171717] border border-[#CBCBCB00] text-white text-xl font-Lufga p-2">
-        <ul className="flex gap-4">
-          {" "}
+    <div className="container h-[80px] mt-10">
+      <div className="flex justify-between items-center rounded-full bg-[#171717] border border-[#CBCBCB00] text-white text-xl p-2">
+        <ul className="flex gap-4 ">
           {navItems.slice(0, 3).map((item) => (
             <li
               key={item}
-              className={getItemClasses(item)}
+              className={`${getItemClasses(item)} font-Lufga`}
               onClick={() => setActiveTab(item)}
               onMouseEnter={() => setHoveredTab(item)}
               onMouseLeave={() => setHoveredTab(null)}
@@ -50,13 +49,13 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center justify-center gap-3 text-2xl font-bold">
           <Image src={Logo} alt="Logo" />
-          Junaid
+          JUNAID
         </div>
         <ul className="flex gap-4">
           {navItems.slice(3).map((item) => (
             <li
               key={item}
-              className={getItemClasses(item)}
+              className={`${getItemClasses(item)} font-Lufga`}
               onClick={() => setActiveTab(item)}
               onMouseEnter={() => setHoveredTab(item)}
               onMouseLeave={() => setHoveredTab(null)}
